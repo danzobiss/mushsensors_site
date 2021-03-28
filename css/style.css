@@ -1,84 +1,114 @@
-body {
-    margin: 0;
-    width: 1440px;
-    overflow-y: auto;
-}
-
-.home {
-    background-image: url(../assets/img/champignom.png);
-    background-size: 100%;
-    width: 100%;
-    height: 864px;
-    overflow: hidden;
-    background-color: #970606;
-}
-
-.container {
-    width: 85%;
-    margin: auto;
-    overflow: auto;
-}
-
-
-/* ------------------------------ HEADER ------------------------------ */
-
-.header {
-    margin-top: 3.13%;
-    color: white;
-    height: 80px;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-}
-
-.logo {
-    width: 72px;
-    float: left;
-}
-
-.titulo {
-    float: left;
-    margin: 16px;
-    height: 40px;
-}
-
-.navbar {
-    list-style: none;
-    float: right;
-    margin: 26px 0;
-}
-
-.navbar li div {
-    width: 172px;
-    padding: 18px 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 65px;
-    font-family: 'Inter', sans-serif;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    margin-top: -18px;
-}
-
-.navbar li div span {
-    height: 20px;
-}
-
-.login {
-    background-color: transparent;
-    border: 1px solid rgb(200, 110, 5);
-}
-
-.cadastro {
-    background: rgb(200, 110, 5);
-    background: linear-gradient(90deg, rgba(200, 110, 5, 0.5032387955182073) 0%, rgba(200, 110, 5, 1) 100%);
-    border: 1px solid rgb(200, 110, 5);
-}
-
-.navbar li {
-    float: left;
-    margin-left: 32px;
-    height: 20px;
-}
-
-
-/* ------------------------------ HOME ------------------------------ */
+    body {
+        margin: 0;
+        width: 1440px;
+        overflow-y: auto;
+    }
+    
+    .container {
+        width: 85%;
+        margin: auto;
+        overflow: auto;
+    }
+    /* ------------------------------ HEADER ------------------------------ */
+    
+    .header {
+        margin-top: 3.13%;
+        color: white;
+        height: 80px;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .logo {
+        width: 72px;
+        float: left;
+    }
+    
+    .titulo {
+        float: left;
+        margin: 16px;
+        height: 40px;
+        font-family: 'Sora', sans-serif;
+    }
+    
+    .navbar {
+        list-style: none;
+        float: right;
+        margin: 26px 0;
+    }
+    
+    .navbar li div {
+        width: 172px;
+        padding: 18px 0;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 65px;
+        font-family: 'Inter', sans-serif;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        margin-top: -18px;
+    }
+    
+    .navbar li div span {
+        height: 20px;
+    }
+    
+    .login {
+        background-color: transparent;
+        border: 1px solid rgb(200, 110, 5);
+    }
+    
+    .cadastro {
+        background: rgb(200, 110, 5);
+        background: linear-gradient(90deg, rgba(200, 110, 5, 0.5032387955182073) 0%, rgba(200, 110, 5, 1) 100%);
+        border: 1px solid rgb(200, 110, 5);
+    }
+    
+    .navbar li {
+        float: left;
+        margin-left: 32px;
+        height: 20px;
+    }
+    /* ------------------------------ HOME ------------------------------ */
+    
+    .home {
+        background-image: url(../assets/img/champignom.png);
+        background-size: 100%;
+        width: 100%;
+        height: 864px;
+        overflow: hidden;
+        background-color: #970606;
+        text-align: center;
+        color: white;
+    }
+    
+    .bemVindo {
+        font-size: 56px;
+        line-height: 70px;
+        font-family: 'Sora', sans-serif;
+        height: 140px;
+        margin-top: 128px;
+    }
+    
+    .descricao {
+        font-family: 'Inter', sans-serif;
+        height: 72px;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FDFDFD;
+        margin-top: 24px;
+    }
+    
+    .saibaMais {
+        width: 240px;
+        background: rgba(119, 119, 119, 0.9);
+        border-radius: 8px;
+        color: white;
+        text-align: center;
+        padding: 21px 0;
+        font-family: 'Sora', sans-serif;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 96px;
+        cursor: pointer;
+    }
