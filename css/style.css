@@ -1,13 +1,19 @@
     body {
         margin: 0;
-        width: 1440px;
         overflow-y: auto;
+        background-color: #E5E5E5;
+        min-width: 805px;
     }
     
     .container {
         width: 85%;
         margin: auto;
         overflow: auto;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 12px;
+        display: none;
     }
     /* ------------------------------ HEADER ------------------------------ */
     
@@ -73,7 +79,8 @@
     
     .home {
         background-image: url(../assets/img/champignom.png);
-        background-size: 100%;
+        background-size: cover;
+        background-position: center;
         width: 100%;
         height: 864px;
         overflow: hidden;
@@ -111,4 +118,66 @@
         margin: auto;
         margin-top: 96px;
         cursor: pointer;
+    }
+    /* ------------------------------ EQUIPE ------------------------------ */
+    
+    .equipe {
+        display: flex;
+        justify-content: center;
+        color: #262B3A;
+        font-family: 'Sora', sans-serif;
+        font-weight: bold;
+    }
+    
+    .equipe .container {
+        width: 100%;
+    }
+    
+    .fundadores {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: -15px 16px 98px -40px rgba(128, 29, 21, 0.3);
+        border-radius: 8px;
+        margin: 12px 16px;
+    }
+    
+    .fundadores .card {
+        flex: 1;
+        padding: 40px 20px;
+        max-width: 592px;
+    }
+    
+    .foto {
+        max-width: 280px;
+        border-radius: 8px;
+        background-color: #EFE4E4;
+        object-position: center;
+    }
+    
+    .cargo {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8F8E93;
+        margin: 0;
+        margin-top: 32px;
+    }
+    
+    .nome {
+        font-size: 24px;
+        line-height: 36px;
+        color: #6F0000;
+        margin: 0;
+        margin-top: 8px;
     }
