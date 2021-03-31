@@ -153,8 +153,16 @@
     
     .fundadores .card {
         flex: 1;
-        padding: 40px 20px;
+        padding: 40px;
         max-width: 592px;
+    }
+    
+    .fundadores .card:nth-child(1) {
+        margin-left: 7.5%;
+    }
+    
+    .fundadores .card:nth-child(2) {
+        margin-right: 7.5%;
     }
     
     .foto {
@@ -180,4 +188,26 @@
         color: #6F0000;
         margin: 0;
         margin-top: 8px;
+    }
+    
+    .empregados {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    
+    .empregados .card {
+        flex: 1;
+        padding-bottom: 70px;
+        max-width: 280px;
+    }
+    
+    .empregados .card:nth-child(1) {
+        /* margin-left: 7.5%; */
+    }
+    
+    .empregados .card:nth-child(4) {
+        /* margin-right: 7.5%; */
     }
