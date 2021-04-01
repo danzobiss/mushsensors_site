@@ -1,213 +1,350 @@
-    body {
-        margin: 0;
-        overflow-y: auto;
-        background-color: #E5E5E5;
-        min-width: 805px;
-    }
-    
-    .container {
-        width: 85%;
-        margin: auto;
-        overflow: auto;
-    }
-    
-     ::-webkit-scrollbar {
-        width: 12px;
-        display: none;
-    }
-    /* ------------------------------ HEADER ------------------------------ */
-    
-    .header {
-        margin-top: 3.13%;
-        color: white;
-        height: 80px;
-        font-size: 16px;
-        font-family: 'Inter', sans-serif;
-    }
-    
-    .logo {
-        width: 72px;
-        float: left;
-    }
-    
-    .titulo {
-        float: left;
-        margin: 16px;
-        height: 40px;
-        font-family: 'Sora', sans-serif;
-    }
-    
-    .navbar {
-        list-style: none;
-        float: right;
-        margin: 26px 0;
-    }
-    
-    .navbar li div {
-        width: 172px;
-        padding: 18px 0;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 65px;
-        font-family: 'Inter', sans-serif;
-        color: white;
-        cursor: pointer;
-        text-align: center;
-        margin-top: -18px;
-    }
-    
-    .navbar li div span {
-        height: 20px;
-    }
-    
-    .login {
-        background-color: transparent;
-        border: 1px solid rgb(200, 110, 5);
-    }
-    
-    .cadastro {
-        background: rgb(200, 110, 5);
-        background: linear-gradient(90deg, rgba(200, 110, 5, 0.5032387955182073) 0%, rgba(200, 110, 5, 1) 100%);
-        border: 1px solid rgb(200, 110, 5);
-    }
-    
-    .navbar li {
-        float: left;
-        margin-left: 32px;
-        height: 20px;
-    }
-    /* ------------------------------ HOME ------------------------------ */
-    
-    .home {
-        background-image: url(../assets/img/champignom.png);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 864px;
-        overflow: hidden;
-        background-color: #970606;
-        text-align: center;
-        color: white;
-    }
-    
-    .bemVindo {
-        font-size: 56px;
-        line-height: 70px;
-        font-family: 'Sora', sans-serif;
-        height: 140px;
-        margin-top: 128px;
-    }
-    
-    .descricao {
-        font-family: 'Inter', sans-serif;
-        height: 72px;
-        font-size: 24px;
-        line-height: 36px;
-        color: #FDFDFD;
-        margin-top: 24px;
-    }
-    
-    .saibaMais {
-        width: 240px;
-        background: rgba(119, 119, 119, 0.9);
-        border-radius: 8px;
-        color: white;
-        text-align: center;
-        padding: 21px 0;
-        font-family: 'Sora', sans-serif;
-        font-weight: bold;
-        margin: auto;
-        margin-top: 96px;
-        cursor: pointer;
-    }
-    /* ------------------------------ EQUIPE ------------------------------ */
-    
-    .equipe {
-        display: flex;
-        justify-content: center;
-        color: #262B3A;
-        font-family: 'Sora', sans-serif;
-        font-weight: bold;
-    }
-    
-    .equipe .container {
-        width: 100%;
-    }
-    
-    .fundadores {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: white;
-        box-shadow: -15px 16px 98px -40px rgba(128, 29, 21, 0.3);
-        border-radius: 8px;
-        margin: 12px 16px;
-    }
-    
-    .fundadores .card {
-        flex: 1;
-        padding: 40px;
-        max-width: 592px;
-    }
-    
-    .fundadores .card:nth-child(1) {
-        margin-left: 7.5%;
-    }
-    
-    .fundadores .card:nth-child(2) {
-        margin-right: 7.5%;
-    }
-    
-    .foto {
-        max-width: 280px;
-        border-radius: 8px;
-        background-color: #EFE4E4;
-        object-position: center;
-    }
-    
-    .cargo {
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #8F8E93;
-        margin: 0;
-        margin-top: 32px;
-    }
-    
-    .nome {
-        font-size: 24px;
-        line-height: 36px;
-        color: #6F0000;
-        margin: 0;
-        margin-top: 8px;
-    }
-    
-    .empregados {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        flex-flow: row wrap;
-    }
-    
-    .empregados .card {
-        flex: 1;
-        padding-bottom: 70px;
-        max-width: 280px;
-    }
-    
-    .empregados .card:nth-child(1) {
-        /* margin-left: 7.5%; */
-    }
-    
-    .empregados .card:nth-child(4) {
-        /* margin-right: 7.5%; */
-    }
+body {
+    margin: 0;
+    overflow-y: auto;
+    background-color: #E5E5E5;
+    min-width: 805px;
+    padding-bottom: 47px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+
+ ::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+}
+
+
+/* ------------------------------ HEADER ------------------------------ */
+
+.header {
+    margin-top: 3.13%;
+    color: white;
+    height: 80px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.logo {
+    width: 72px;
+    float: left;
+}
+
+.titulo {
+    float: left;
+    margin: 16px;
+    height: 40px;
+    font-family: 'Sora', sans-serif;
+}
+
+.navbar {
+    list-style: none;
+    float: right;
+    margin: 26px 0;
+}
+
+.navbar li div {
+    width: 172px;
+    padding: 18px 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 65px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-top: -18px;
+}
+
+.navbar li div span {
+    height: 20px;
+}
+
+.login {
+    background-color: transparent;
+    border: 1px solid rgb(200, 110, 5);
+}
+
+.cadastro {
+    background: rgb(200, 110, 5);
+    background: linear-gradient(90deg, rgba(200, 110, 5, 0.5032387955182073) 0%, rgba(200, 110, 5, 1) 100%);
+    border: 1px solid rgb(200, 110, 5);
+}
+
+.navbar li {
+    float: left;
+    margin-left: 32px;
+    height: 20px;
+}
+
+
+/* ------------------------------ HOME ------------------------------ */
+
+.home {
+    background-image: url(../assets/img/champignom.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 864px;
+    overflow: hidden;
+    background-color: #970606;
+    text-align: center;
+    color: white;
+}
+
+.bemVindo {
+    font-size: 56px;
+    line-height: 70px;
+    font-family: 'Sora', sans-serif;
+    height: 140px;
+    margin-top: 128px;
+}
+
+.descricao {
+    font-family: 'Inter', sans-serif;
+    height: 72px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FDFDFD;
+    margin-top: 24px;
+}
+
+.saibaMais {
+    width: 240px;
+    background: rgba(119, 119, 119, 0.9);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 21px 0;
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 96px;
+    cursor: pointer;
+}
+
+
+/* ------------------------------ EQUIPE ------------------------------ */
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    color: #262B3A;
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+}
+
+.fundadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: -15px 30px 40px -40px rgba(128, 29, 21, 0.3);
+    border-radius: 8px;
+    margin: 12px 16px;
+}
+
+.fundadores .card {
+    flex: 1;
+    padding: 40px;
+    max-width: 592px;
+}
+
+.foto {
+    max-width: 280px;
+    border-radius: 8px;
+    background-color: #EFE4E4;
+}
+
+.cargo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8F8E93;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.nome {
+    font-size: 24px;
+    line-height: 36px;
+    color: #6F0000;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.empregados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-flow: row wrap;
+    padding-bottom: 106px;
+}
+
+.empregados .card {
+    flex: 1;
+    padding-bottom: 70px;
+    max-width: 280px;
+}
+
+
+/* ------------------------------ EQUIPE ------------------------------ */
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #F2F2F377;
+    color: #262B3A;
+    font-family: 'Sora', sans-serif;
+    font-weight: bold;
+    padding-top: 67px;
+    padding-bottom: 76px;
+    overflow-y: auto;
+}
+
+.sobre .container {
+    width: 100%;
+    padding-left: 7.5%;
+}
+
+.sobre .horizontal {
+    width: 100%;
+    margin-top: 91px;
+    margin-bottom: 76px;
+}
+
+.textos {
+    text-align: left;
+    float: left;
+    margin-top: 59px;
+    margin-right: 72px;
+    max-width: 1100px;
+}
+
+.frase {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #575B64;
+}
+
+.sobre .descricao {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    color: #666363;
+    font-weight: 400;
+    height: auto;
+}
+
+.cogumelo {
+    object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
+    float: right;
+}
+
+
+/* ------------------------------ FOOTER ------------------------------ */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 109px;
+}
+
+.linha {
+    height: 3px;
+    width: 100%;
+    background: radial-gradient(50% 11013689.76% at 50% 0%, #6F0000 0%, #EFC0C0 100%);
+    opacity: 0.1;
+    border-radius: 49px;
+    margin-bottom: 36px;
+}
+
+.footer .horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer .horizontal div {
+    min-width: 241px;
+}
+
+.esquerda {
+    display: flex;
+    float: left;
+}
+
+.esquerda p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 22.5px;
+    color: #6F0000;
+    opacity: 0.8;
+    margin: 31px 0 0 16px;
+}
+
+.meio {
+    text-align: center;
+}
+
+.meio p:nth-child(1) {
+    font-family: Inter;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0;
+    color: #8C8A97;
+}
+
+.meio p:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #6F0000;
+    margin: 6px 0 0 0;
+    opacity: 0.8;
+}
+
+.direita {
+    justify-self: flex-end;
+    text-align: center;
+}
+
+.direita p:nth-child(1) {
+    font-family: Inter;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0;
+    color: #8C8A97;
+}
+
+.direita p:nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #6F0000;
+    margin: 6px 0 0 0;
+    opacity: 0.8;
+}
