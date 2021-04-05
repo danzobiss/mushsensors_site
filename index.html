@@ -13,21 +13,21 @@
 </head>
 
 <body>
-    <div class="home">
+    <div class="home" id="home">
         <div class="header">
             <div class="container">
                 <img class="logo" src="./assets/img/logo.png" alt="Logo do MushSensors">
                 <h1 class="titulo">MushSensors</h1>
 
                 <ul class="navbar">
-                    <li>Início</li>
-                    <li>Equipe</li>
-                    <li>Sobre</li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
                     <li>
-                        <div class="login"><span>Login</span></div>
+                        <div class="login" id="login"><span>Login</span></div>
                     </li>
                     <li>
-                        <div class="cadastro"><span>Cadastro</span></div>
+                        <div class="cadastro" id="cadastro"><span>Cadastro</span></div>
                     </li>
                 </ul>
             </div>
@@ -37,10 +37,12 @@
             <p class="bemVindo">Bem Vindo ao<br><b>MushSensors!</b></p>
             <p class="descricao">O sistema que monitora a sua<br>plantação de cogumelos.</p>
 
-            <div class="saibaMais">Saiba Mais</div>
+            <a href="#equipe">
+                <div class="saibaMais">Saiba Mais</div>
+            </a>
         </div>
     </div>
-    <div class="equipe">
+    <div class="equipe" id="equipe">
         <div class="container">
             <h1 class="equipe">Equipe</h1>
             <div class="fundadores">
@@ -79,7 +81,7 @@
             </div>
         </div>
     </div>
-    <div class="sobre">
+    <div class="sobre" id="sobre">
         <div class="container">
             <h1>Sobre o Projeto</h1>
             <div class="horizontal">
@@ -111,6 +113,59 @@
             </div>
         </div>
     </div>
+    <div id="modalLogin" class="modal">
+        <div class="conteudoModalLogin">
+            <span class="fechar">&times;</span>
+            <h1 class="tituloModal">Login</h1>
+            <input type="text" class="inputModal" placeholder="Nome de usuário">
+            <input type="password" class="inputModal" placeholder="Senha">
+            <button id="btnLogin" class="btnModal">Entrar</button>
+        </div>
+    </div>
+    <div id="modalCadastro" class="modal">
+        <div class="conteudoModalCadastro">
+            <span class="fechar">&times;</span>
+            <h1 class="tituloModal">Cadastro</h1>
+            <input type="text" class="inputModal" placeholder="Nome de usuário">
+            <input type="password" class="inputModal" placeholder="Senha">
+            <input type="password" class="inputModal" placeholder="Confirmar Senha">
+            <button id="btnCadastro" class="btnModal">Cadastrar</button>
+        </div>
+    </div>
 </body>
 
 </html>
+
+<script>
+    var modalLogin = document.getElementById("modalLogin");
+    var btnLogin = document.getElementById("login");
+    var span = document.getElementsByClassName("fechar")[0];
+
+    btnLogin.onclick = function() {
+        modalLogin.style.display = "block";
+    }
+    span.onclick = function() {
+        modalLogin.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modalLogin.style.display = "none";
+        }
+    }
+
+    var modalCadastro = document.getElementById("modalCadastro");
+    var btnCadastro = document.getElementById("cadastro");
+    var span = document.getElementsByClassName("fechar")[1];
+
+    btnCadastro.onclick = function() {
+        modalCadastro.style.display = "block";
+    }
+    span.onclick = function() {
+        modalCadastro.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modalCadastro.style.display = "none";
+        }
+    }
+</script>
